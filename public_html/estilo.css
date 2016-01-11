@@ -23,13 +23,13 @@
 .black4 { color: #000000 }
 .black5 { color: #030302 }
 
-/**
-	#FE9528 - Laranha
-	#286584 - Azul Marinho
-	#183E51 - Azul Marinho 2
-	#002538 - Azul Marinho 3
 
-*/
+.orange{	color: #FE9528; } - Laranha
+	/*#286584 - Azul Marinho
+	#183E51 - Azul Marinho 2*/
+.navy{ color:	#002538; }
+
+
 
 body{
 	background-color: #131313;
@@ -38,12 +38,22 @@ body{
 }
 
 @media (max-width: 479px){
-	.wrap{
-		width: 95%;
-		margin: 0 auto;
+
+	.navbar .navbar-toggle .icon-bar {
+    background-color: #002538;
 	}
 
-	.header-nav{
+	.brand-title{
+		color: #FE9528;
+		font-size: 1.5em;
+		float: left;
+	}
+
+	button.navbar-toggle{
+		background-color: #FE9528;
+	}
+
+	.myNavBar{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -58,7 +68,13 @@ body{
 		padding: 0;
 	}
 
-	li.header-nav-item{
+	ul.navList{
+		list-style-type: none;
+		margin: 10px auto;
+		padding: 0;
+	}
+
+	li.navItem{
 		width: 100%;
 		font-size: 1.5em;
 		background-color: #002538;
@@ -67,15 +83,16 @@ body{
 		text-align: center;
 	}
 
-	li.header-nav-item a{
+	li.navItem a{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	  transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	}
 
-	li.header-nav-item a:hover{
+	li.navItem a:hover{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	  transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		color: #FAFAFA;
+		text-decoration: none;
 	}
 
 	.introducao{
@@ -201,7 +218,7 @@ body{
 	.icon-css3{
 		font-size: 25vw;
 	}
-	
+
 	.icon-java{
 		font-size: 25vw;
 	}
@@ -280,13 +297,13 @@ body{
 }
 
 @media (min-width: 480px) and (max-width: 799px){
-	
+
 	.wrap{
 		width: 95%;
 		margin: 0 auto;
 	}
 
-	.header-nav{
+	.myNavBar{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -301,7 +318,7 @@ body{
 		padding: 0;
 	}
 
-	li.header-nav-item{
+	li.navItem{
 		width: 30%;
 		font-size: 1.8em;
 		background-color: #002538;
@@ -311,12 +328,12 @@ body{
 		text-align: center;
 	}
 
-	li.header-nav-item a{
+	li.navItem a{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	}
 
-	li.header-nav-item a:hover{
+	li.navItem a:hover{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		color: #FAFAFA;
@@ -445,7 +462,7 @@ body{
 	.icon-css3{
 		font-size: 20vw;
 	}
-	
+
 	.icon-java{
 		font-size: 20vw;
 	}
@@ -523,13 +540,13 @@ body{
 }
 
 @media (min-width: 800px) and (max-width: 1199px){
-	
+
 	.wrap{
 		width: 95%;
 		margin: 0 auto;
 	}
 
-	.header-nav{
+	.myNavBar{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -549,7 +566,7 @@ body{
 		border-bottom-right-radius: 2em;
 	}
 
-	li.header-nav-item{
+	li.navItem{
 		width: 30%;
 		font-size: 1.8em;
 		background-color: #002538;
@@ -559,12 +576,12 @@ body{
 		text-align: center;
 	}
 
-	li.header-nav-item a{
+	li.navItem a{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	}
 
-	li.header-nav-item a:hover{
+	li.navItem a:hover{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		color: #FAFAFA;
@@ -695,7 +712,7 @@ body{
 	.icon-css3{
 		font-size: 13vw;
 	}
-	
+
 	.icon-java{
 		font-size: 13vw;
 	}
@@ -773,13 +790,13 @@ body{
 }
 
 @media (min-width: 1200px){
-	
+
 	.wrap{
 		width: 95%;
 		margin: 0 auto;
 	}
 
-	.header-nav{
+	.myNavBar{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -798,7 +815,7 @@ body{
 		border-bottom-right-radius: 2em;
 	}
 
-	li.header-nav-item{
+	li.navItem{
 		width: 30%;
 		font-size: 1.8em;
 		background-color: #002538;
@@ -808,12 +825,12 @@ body{
 		text-align: center;
 	}
 
-	li.header-nav-item a{
+	li.navItem a{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	}
 
-	li.header-nav-item a:hover{
+	li.navItem a:hover{
 		-webkit-transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	  	transition:         all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		color: #FAFAFA;
@@ -928,7 +945,7 @@ body{
 		transition: color 0.3s ease-in-out;
 	}
 
-	
+
 
 	.container-icone:hover{
 		color: #FE9528;
@@ -946,7 +963,7 @@ body{
 	.icon-css3{
 		font-size: 10vw;
 	}
-	
+
 	.icon-java{
 		font-size: 10vw;
 	}
